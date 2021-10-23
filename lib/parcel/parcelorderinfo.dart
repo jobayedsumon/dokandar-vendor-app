@@ -97,7 +97,7 @@ class _OrderInfoParcelState extends State<OrderInfoParcel> {
                           onPressed: () {
                             if (orderDetails.user_phone != null &&
                                 orderDetails.user_phone.toString().length > 9) {
-                              _launchURL("tel://${orderDetails.user_phone}");
+                              launch("tel:${orderDetails.user_phone}");
                             }
                           },
                         ),

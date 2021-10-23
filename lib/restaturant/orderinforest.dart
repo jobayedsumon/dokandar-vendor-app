@@ -98,7 +98,7 @@ class _OrderInfoRestState extends State<OrderInfoRest> {
                             if (orderDetails.user_number != null &&
                                 orderDetails.user_number.toString().length >
                                     9) {
-                              _launchURL("tel://${orderDetails.user_number}");
+                              launch("tel:${orderDetails.user_number}");
                             }
                           },
                         ),
@@ -402,7 +402,7 @@ class _OrderInfoRestState extends State<OrderInfoRest> {
                         if (orderDetails.delivery_boy_num != null &&
                             orderDetails.delivery_boy_num.toString().length >
                                 9) {
-                          _launchURL("tel://${orderDetails.delivery_boy_num}");
+                          launch("tel:${orderDetails.delivery_boy_num}");
                         }
                       },
                     ),
